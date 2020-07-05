@@ -52,7 +52,7 @@ App is a kind of model showing how to implement MVC approach in JavaScript. Mode
 * **/api/todos/create:** To creating a new todo or task for a user ( method : POST)
 * **/api/todos :** To fetching all todos or tasks for a user (method : GET)
 * **/api/todos/:task_id :** To fetching a particular todo or task for a user (method : GET)
-* **/api/todos/update :** To updating a todo or task by task_id for a user ( method : POST)
+* **/api/todos/update/:task_id :** To updating a todo or task by task_id for a user ( method : POST)
 * **/api/todos/delete/:task_id :** To deleting a todo or task for a user ( method: DELETE)
 * **/api/todos/delete :** To deleting al todo or task for a user ( method: DELETE)
 
