@@ -18,11 +18,11 @@ App is a kind of model showing how to implement MVC approach in JavaScript. Mode
 ## Prerequisites
 
 
-*[Node.js (LTS)](https://nodejs.org/en/download/)*
-*[MySQL( on Mac)] (https://tableplus.com/blog/2018/11/how-to-download-mysql-mac.html)*
-*[MySQL WorkBench] (http://www.ccs.neu.edu/home/kathleen/classes/cs3200/MySQLWorkbenchMAC10.pdf)*
-*[Code Editor of your Choice ( I will use vs code throughout the tutorial)](https://code.visualstudio.com/)*
-*[Postman (For testing our api endpoints)](https://www.postman.com/downloads/)*
+* [Node.js (LTS)](https://nodejs.org/en/download/)
+* [MySQL( on Mac)](https://tableplus.com/blog/2018/11/how-to-download-mysql-mac.html)
+* [MySQL WorkBench](http://www.ccs.neu.edu/home/kathleen/classes/cs3200/MySQLWorkbenchMAC10.pdf)
+* [Code Editor of your Choice ( I will use vs code throughout the tutorial)](https://code.visualstudio.com/)
+* [Postman (For testing our api endpoints)](https://www.postman.com/downloads/)
 
 
 
@@ -39,22 +39,22 @@ App is a kind of model showing how to implement MVC approach in JavaScript. Mode
 
 **API endpoints for User Module:**
     
-* **/api/user/register:** To registering a user (method: POST)*
-* **/api/user :** To fetching all users (method : GET)*
-* **/api/user/login :** To logging a user (method : POST)*
-* **/api/user/update :** To updating a user by user_id ( method : PATCH)*
-* **/api/user/delete :** To deleting a user ( method: DELETE)*
+* **/api/user/register:** To registering a user (method: POST)
+* **/api/user :** To fetching all users (method : GET)
+* **/api/user/login :** To logging a user (method : POST)
+* **/api/user/update :** To updating a user by user_id ( method : PATCH)
+* **/api/user/delete :** To deleting a user ( method: DELETE)
 
 **Todos Module:** This module will contain all api endpoints related to todos
 
 **API endpoints for Todos Module:**
 
-* **/api/todos/create:** To creating a new todo or task for a user ( method : POST)* 
-* **/api/todos :** To fetching all todos or tasks for a user (method : GET)*
-* **/api/todos/:task_id :** To fetching a particular todo or task for a user (method : GET)*
-* **/api/todos/update :** To updating a todo or task by task_id for a user ( method : POST)*
-* **/api/todos/delete/:task_id :** To deleting a todo or task for a user ( method: DELETE)*
-* **/api/todos/delete :** To deleting al todo or task for a user ( method: DELETE)*
+* **/api/todos/create:** To creating a new todo or task for a user ( method : POST)
+* **/api/todos :** To fetching all todos or tasks for a user (method : GET)
+* **/api/todos/:task_id :** To fetching a particular todo or task for a user (method : GET)
+* **/api/todos/update :** To updating a todo or task by task_id for a user ( method : POST)
+* **/api/todos/delete/:task_id :** To deleting a todo or task for a user ( method: DELETE)
+* **/api/todos/delete :** To deleting al todo or task for a user ( method: DELETE)
 
 
 
@@ -116,6 +116,21 @@ App is a kind of model showing how to implement MVC approach in JavaScript. Mode
     # Install devDependencies
     
     npm i  or npm install 
+
+    # Create .env file in root todo-list folder
+
+    touch .env
+
+    Define following variables inside .env file:
+    
+    DB_NAME = /* provide your database name */
+    DB_HOST = /* provide your host name */
+    DB_USER = /* provide your database user name */
+    DB_PASSWORD = /* provide your database password name */
+    PORT = /* provide your port number to run express server */
+    JWT_KEY = /* define a random key here */
+
+    Save the file.
 
     # Start the server
     
